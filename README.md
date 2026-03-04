@@ -57,6 +57,42 @@ npm run preview
 
 ---
 
+## 🖥️ Running from VS Code
+
+The repository includes a ready-made VS Code workspace configuration in the `.vscode/` folder.
+
+### One-time setup
+
+1. **Install recommended extensions** — when you open the folder VS Code will prompt you to install them. Accept, or go to the Extensions sidebar, search `@recommended`, and install them all.
+
+2. **Install Node.js dependencies** (if you haven't already):
+
+   ```bash
+   npm install
+   ```
+
+### Start the dev server + open browser in one click
+
+Press **`F5`** (or go to **Run → Start Debugging**).  
+If a picker appears, choose **"Launch Chrome (Dev Server)"** or **"Launch Edge (Dev Server)"**.  
+VS Code will:
+1. Run `npm run dev` in a new terminal panel automatically.
+2. Wait for Vite to be ready.
+3. Open `http://localhost:5173/portfolio/` in a browser with the debugger attached.
+
+You can set breakpoints in any `.jsx` file and they will be hit in the VS Code debugger.
+
+### Start the dev server without the debugger
+
+Press **`Ctrl+Shift+B`** (macOS: **`⇧⌘B`**) to run the **"Start Dev Server"** build task.  
+Then open `http://localhost:5173/portfolio/` in your browser manually.
+
+### Stop the server
+
+Click the **Stop** button (⏹) in the debug toolbar, or close the terminal panel that was opened for the task.
+
+---
+
 ## 🌐 Deploy to GitHub Pages (optional)
 
 1. Install the deploy helper:
